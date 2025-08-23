@@ -21,7 +21,7 @@ Example use case -> You have an Airflow DAG that is supposed to handle the batch
             source_bucket="LANDING_BUCKET",
             dest_bucket="RAW_BUCKET",
             aws_region="AWS_REGION",
-            s3_prefix="folder_to_ingest/",                     # e.g "transactions/2025/"
+            s3_prefix="folder_to_ingest/",                     # e.g "transactions/2025/" 
             source_folders=["folder_1", "folder_2"],    # one folder or many
             glue_tables=GLUE_TABLES,                    # {'folder': {'schema': …}}
             dag_run=ctx.get("dag_run"),
